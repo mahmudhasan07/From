@@ -48,7 +48,12 @@ emailOutput.innerText = emailShow;
 dateOutput.innerText = dateShow;
 numberOutput.innerText = numberShow;
 textareaOutput.innerText = textareaShow;
-ageOutput.innerText = ageShow
+if (ageShow<18){
+    ageWrong.innerText = "Under 18 can't apply this from "
+}
+else {
+    ageOutput.innerText = ageShow
+}
 
 nameInput.value= " ";
 emailInput.value= " ";
